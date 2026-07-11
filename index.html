@@ -195,6 +195,24 @@
   .cta-panel h2 { margin: 0 auto; }
   .cta-panel .lede { margin-left: auto; margin-right: auto; }
   .cta-panel .btn { margin-top: 36px; }
+  .cta-grid {
+    display: grid; grid-template-columns: 300px 1fr; gap: 44px; align-items: center;
+    text-align: left; position: relative;
+  }
+  .cta-grid h2, .cta-grid .lede { margin-left: 0; }
+  .necklace-shot img {
+    width: 100%; aspect-ratio: 1; object-fit: cover;
+    border-radius: 16px; border: 1px solid rgba(232,180,90,.4); display: block;
+  }
+  .necklace-shot figcaption {
+    margin-top: 10px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--text-faint); text-align: center;
+  }
+  @media (max-width: 860px) {
+    .cta-grid { grid-template-columns: 1fr; gap: 28px; text-align: center; }
+    .cta-grid h2, .cta-grid .lede { margin-left: auto; }
+    .necklace-shot { max-width: 280px; margin: 0 auto; }
+  }
 
   footer {
     border-top: 1px solid var(--line);
@@ -257,6 +275,7 @@
       <a class="btn big ghost" href="#product">See what we're building</a>
     </div>
     <p class="hero-note">Now in private development · Early access opening soon</p>
+    <p class="hero-note" style="margin-top:10px"><a href="#access" style="color:var(--gold);text-decoration:none;font-weight:600">✦ The first 333 founding members receive the 333 Necklace — free →</a></p>
   </div>
 </header>
 
@@ -356,12 +375,20 @@
 <section id="access">
   <div class="wrap">
     <div class="cta-panel">
-      <div class="kicker">Membership</div>
-      <h2>Be there when it opens.</h2>
-      <p class="lede">Northstar 333 is an early-stage idea in active design — there's no product to download yet. We're inviting a small first group of founding members to shape it from the ground up: people serious about the gap between the life they have and the life they intend.</p>
-      <p class="lede" style="margin-top:14px"><strong style="color:var(--gold)">The first 333 founding members receive the 333 Necklace</strong> — the same compass star Amanda wears. It's more than a symbol: a reminder to pause, realign, and move forward with intention — choosing growth over autopilot, intention over distraction, and connection over isolation. On us, while supplies last.</p>
-      <a class="btn big" href="mailto:wildchildmotorsports@gmail.com?subject=Northstar%20333%20founding%20membership&body=I%27d%20like%20to%20become%20a%20founding%20member%20of%20Northstar%20333.">Become a founding member</a>
-      <p class="hero-note" style="position:relative">Wear the reminder. Build the community. Help create a more aligned world.</p>
+      <div class="cta-grid">
+        <figure class="necklace-shot" style="margin:0">
+          <img src="images/necklace.jpg" alt="The 333 Necklace — a gold 333 pendant on a gold chain">
+          <figcaption>The 333 Necklace · founding member gift</figcaption>
+        </figure>
+        <div>
+          <div class="kicker">Membership · Free</div>
+          <h2>Join the first 333 — and wear the reminder.</h2>
+          <p class="lede"><strong style="color:var(--gold)">The first 333 founding members receive the 333 Necklace, free</strong> — the number for alignment, in gold. It's more than a symbol: a reminder to pause, realign, and move forward with intention — choosing growth over autopilot, intention over distraction, and connection over isolation. On us, while supplies last.</p>
+          <p class="lede" style="margin-top:14px">Northstar 333 is an early-stage idea in active design — there's no product to download yet. Founding members shape it from the ground up: people serious about the gap between the life they have and the life they intend.</p>
+          <a class="btn big" href="mailto:wildchildmotorsports@gmail.com?subject=Northstar%20333%20founding%20membership&body=I%27d%20like%20to%20become%20a%20founding%20member%20of%20Northstar%20333.">Become a founding member</a>
+          <p class="hero-note" style="position:relative">Wear the reminder. Build the community. Help create a more aligned world.</p>
+        </div>
+      </div>
     </div>
     <!-- SOFT-LAUNCH: Founding Supporter (contribution) section stays hidden until there's a legal
          entity and a payment processor. Re-enable by uncommenting and setting the button href to the
