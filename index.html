@@ -200,21 +200,21 @@
   }
   footer .fine { font-size: 13px; color: var(--text-faint); }
 
-  /* founder */
-  .founder-grid {
-    display: grid; grid-template-columns: 340px 1fr; gap: 56px; align-items: center;
+  /* founders */
+  .team {
+    display: grid; grid-template-columns: repeat(2, minmax(0, 300px)); gap: 28px;
+    margin-top: 48px;
   }
-  .founder-photo {
-    aspect-ratio: 4 / 5; border-radius: 18px;
-    background: var(--bg-card); border: 1px solid var(--line);
-    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
-    color: var(--text-faint); font-size: 13px; letter-spacing: .06em;
+  .member img {
+    width: 100%; aspect-ratio: 4 / 5; object-fit: cover;
+    border-radius: 16px; border: 1px solid var(--line);
+    display: block; background: var(--bg-card);
   }
-  .founder-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 18px; }
+  .member h3 { font-size: 17px; font-weight: 600; margin-top: 16px; }
+  .member p { font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); margin-top: 2px; }
 
   @media (max-width: 860px) {
-    .founder-grid { grid-template-columns: 1fr; gap: 32px; }
-    .founder-photo { max-width: 320px; margin: 0 auto; }
+    .team { grid-template-columns: 1fr 1fr; gap: 16px; }
     .cards, .pillars { grid-template-columns: 1fr; }
     .pillar + .pillar { border-left: none; border-top: 1px solid var(--line); }
     .nav-links a:not(.btn) { display: none; }
@@ -310,15 +310,22 @@
 </section>
 
 <section id="founder" class="band">
-  <div class="wrap founder-grid">
-    <div class="founder-photo">
-      <img src="images/amanda.jpg" alt="Amanda, founder of The Alignment Company">
-    </div>
-    <div>
-      <div class="kicker">Why we're building this</div>
-      <h2>It started with one question.</h2>
-      <p class="lede">What if the same intelligence being used to make people work faster was pointed at helping them live better? The Alignment Company grew out of that question — and out of the conviction that most people don't need more productivity. They need more alignment.</p>
-      <p class="lede" style="margin-top:14px">We're not looking for an audience. We're looking for early adopters — people who will use Northstar while it's raw, tell us the truth, and shape what it becomes.</p>
+  <div class="wrap">
+    <div class="kicker">Who's behind this</div>
+    <h2>It started with one question.</h2>
+    <p class="lede">What if the same intelligence being used to make people work faster was pointed at helping them live better? The Alignment Company grew out of that question — and out of the conviction that most people don't need more productivity. They need more alignment.</p>
+    <p class="lede" style="margin-top:14px">We're not looking for an audience. We're looking for early adopters — people who will use Northstar while it's raw, tell us the truth, and shape what it becomes.</p>
+    <div class="team">
+      <div class="member">
+        <img src="images/amanda.jpg" alt="Amanda Harris, founder of The Alignment Company">
+        <h3>Amanda Harris</h3>
+        <p>Founder</p>
+      </div>
+      <div class="member">
+        <img src="images/kevin.jpg" alt="Kevin Gardner, co-founder of The Alignment Company">
+        <h3>Kevin Gardner</h3>
+        <p>Co-founder</p>
+      </div>
     </div>
   </div>
 </section>
