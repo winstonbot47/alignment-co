@@ -244,7 +244,7 @@
   .pillars-photo figcaption { margin-top: 12px; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--text-faint); text-align: center; }
 
   /* founders */
-  .team { display: grid; grid-template-columns: repeat(2, minmax(0, 300px)); gap: 28px; margin-top: 52px; }
+  .team { display: grid; grid-template-columns: minmax(0, 440px); gap: 28px; margin-top: 52px; }
   .member img {
     width: 100%; aspect-ratio: 4 / 5; object-fit: cover;
     border-radius: 18px; border: 1px solid var(--line);
@@ -345,7 +345,7 @@
     .cards { grid-template-columns: 1fr; }
     .pillars-grid { grid-template-columns: 1fr; gap: 40px; }
     .pillars-photo { max-width: 380px; margin: 0 auto; }
-    .team { grid-template-columns: 1fr 1fr; gap: 16px; }
+    .team { grid-template-columns: 1fr; gap: 16px; max-width: 380px; }
     .nav-links a:not(.btn) { display: none; }
     section { padding: 78px 0; }
     .photo-band { padding: 110px 0; }
@@ -471,14 +471,9 @@
     </div>
     <div class="team reveal">
       <div class="member">
-        <img src="images/amanda.jpg" alt="Amanda Harris, founder of The Alignment Company" loading="lazy">
-        <h3>Amanda Harris</h3>
-        <p>Founder</p>
-      </div>
-      <div class="member">
-        <img src="images/kevin.jpg" alt="Sean Harris, co-founder of The Alignment Company" loading="lazy">
-        <h3>Sean Harris</h3>
-        <p>Co-founder</p>
+        <img src="images/founders.jpg" alt="Amanda and Sean Harris, founders of The Alignment Company" loading="lazy">
+        <h3>Amanda &amp; Sean Harris</h3>
+        <p>Founder · Co-founder</p>
       </div>
     </div>
   </div>
